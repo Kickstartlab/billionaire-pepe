@@ -1,0 +1,51 @@
+.text-outline {
+  -webkit-text-stroke: 0.5px #FFA409;
+  animation: flicker 1s ease-in-out infinite alternate;
+}
+
+@keyframes flicker {
+
+  from {
+    text-shadow:
+      0 0 7px #FFA409,
+      0 0 10px #FFA409,
+      0 0 21px #FFA409,
+      0 0 42px #FFA409,
+      0 0 82px #FFA409,
+      0 0 92px #FFA409,
+      0 0 102px #FFA409,
+      0 0 151px #FFA409;
+
+  }
+
+  to {
+    text-shadow: none;
+  }
+}
+
+.bg-gradient {
+  background: linear-gradient(76.22deg, #45108A -1.02%, #25054E 103.28%);
+}
+
+.bg-dark-top {
+  background: linear-gradient(180deg, #140D23 0%, rgba(20, 13, 35, 0) 100%);
+}
+
+.btn-gradient {
+  background: linear-gradient(106.43deg, #E64DC6 -14.04%, #9F19AB 75.55%);
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+  filter: drop-shadow(8px 8px 6px rgb(146, 179, 221));
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
