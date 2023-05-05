@@ -4,27 +4,26 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      blue: {
-        "50": "#441186",
-        "100": "#080d14",
-        "200": "#101124"
+      green: {
+        "100": "#1C6B00",
       },
       black: {
-        "50": "#252525",
-        "100": "#06071B",
+        "50": "#0E0E0E",
+        "100": "#171714",
       },
       white: {
-        "50": "#C3B8CF",
+        "50": "#9398A7",
         "100": "#fff",
       },
-      purple: {
-        "50": "#9079AF",
+      yellow: {
+        "50": "#FFDD00",
         "100": "#CEACF9",
       },
     },
     fontFamily: {
-      'dmsans': ["'DM Sans', sans-serif"],
-      'poppins': ["'Poppins', sans-serif"]
+      'inter': ["'Inter', sans-serif"],
+      'poppins': ["'Poppins', sans-serif"],
+      'cehua': ["Cehua"],
     }
   },
   plugins: [],

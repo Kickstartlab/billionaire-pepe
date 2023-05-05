@@ -11,30 +11,31 @@ export default function Menu() {
   return (
 
     <header>
-      <div className="lg:flex hidden items-center justify-between font-russo  text-white-100 h-28">
+      <div className="lg:flex hidden items-center justify-between font-poppins  text-white-100 h-28">
         <a href="/" className="logo lg:my-12">
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" className='w-9/12' />
         </a>
 
         <nav>
-          <ul className="text-md flex justify-center gap-6 items-center">
-            <li><a href="#about" className="font-semibold">About</a></li>
-            <li><a href="#proposals" className=" font-semibold">Proposals</a></li>
-            <li><a href="#tokenomics" className="font-semibold">Tokenomics</a></li>
-            <li><a href="#roadmap" className="font-semibold">Roadmap</a></li>
-            <li><a href="#chart" className="font-semibold">Chart</a></li>
-            <li><a href="#whitepaper" className="font-semibold">Whitepaper</a></li>
-            <li><a href="#whitepaper" className="font-semibold">DAPP</a></li>
-            <li className="text-white-100 btn-gradient py-3 md:px-6 px-3 rounded-3xl font-bold mt-5 uppercase">
-              <a href='/'>Connect wallet</a>
-            </li>
+          <ul className="text-md flex justify-center gap-12 items-center font-poppins">
+            <li><a href="#about" className="font-semibold text-white-50 hover:text-yellow-50">About</a></li>
+            <li><a href="#tokenomics" className="font-semibold text-white-50 hover:text-yellow-50">Tokenomics</a></li>
+            <li><a href="#roadmap" className="font-semibold text-white-50 hover:text-yellow-50">Roadmap</a></li>
+            <li><a href="#team" className="font-semibold text-white-50 hover:text-yellow-50">Team</a></li>
+            <li><a href="#whitepaper" className="font-semibold text-white-50 hover:text-yellow-50">Whitepaper</a></li>
           </ul>
         </nav>
+
+        <a href='/'>
+          <button className="text-black-100 btn-gradient py-3 md:px-6 px-3 rounded-3xl font-bold mt-5 uppercase">
+            Connect wallet
+          </button>
+        </a>
       </div>
 
       <div className="lg:hidden flex items-center justify-between pt-5 font-russo">
         <a href="/" className="text-white-100">
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" className='w-8/12' />
         </a>
 
         <button onClick={() => setShow(!show)} className="nav cursor-pointer">
@@ -47,18 +48,15 @@ export default function Menu() {
       </div>
 
       {
-        show ? <div className="sidebar fixed top-0 bottom-0 left-0 p-2 w-3/4 overflow-y-auto text-center font-russo font-semibold btn-gradient z-20">
+        show ? <div className="sidebar fixed top-0 bottom-0 left-0 p-2 w-3/4 overflow-y-auto text-center font-russo font-semibold btn-gradient z-20 font-cehua">
 
           <div className="mt-3 px-3 mb-12">
             <a href="/" className="text-white-100">
-              <img src={logo} alt="Logo" />
+              <img src={logo} alt="Logo" className='w-10/12' />
             </a>
           </div>
           <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer  text-white-100">
             <a href="#about" className="text-lg ml-4 font-semibold">About</a>
-          </button>
-          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 text-white-100">
-            <a href="#proposals" className="text-lg ml-4 font-semibold">Proposals</a>
           </button>
           <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
             <a href="#tokenomics" className="text-lg ml-4 font-semibold">Tokenomics</a>
@@ -67,13 +65,13 @@ export default function Menu() {
             <a href="#roadmap" className="text-lg ml-4 font-semibold">Roadmap</a>
           </button>
           <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
-            <a href="#chart" className="text-lg ml-4 font-semibold">Chart</a>
+            <a href="#team" className="text-lg ml-4 font-semibold">Team</a>
           </button>
           <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
             <a href="#whitepaper" className="text-lg ml-4 font-semibold">Whitepaper</a>
           </button>
-          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
-            <a href="#whitepaper" className="text-lg ml-4 font-semibold">DAPP</a>
+          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer text-white-100 bg-black-50">
+            <a href="#whitepaper" className="text-lg ml-4 font-semibold">Connect Wallet</a>
           </button>
         </div> : null
       }

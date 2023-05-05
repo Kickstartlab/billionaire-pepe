@@ -23,16 +23,16 @@
   }
 }
 
-.bg-gradient {
-  background: linear-gradient(76.22deg, #45108A -1.02%, #25054E 103.28%);
-}
-
-.bg-dark-top {
-  background: linear-gradient(180deg, #140D23 0%, rgba(20, 13, 35, 0) 100%);
+.text-gradient {
+  background: linear-gradient(270deg, #FDECB0 0%, #CD9400 56.66%, #F9FB32 103.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .btn-gradient {
-  background: linear-gradient(106.43deg, #E64DC6 -14.04%, #9F19AB 75.55%);
+  background: linear-gradient(281.31deg, #F9FB32 -7.22%, #CD9400 68.56%, #F9FB32 131.36%);
 }
 
 .rotate {
