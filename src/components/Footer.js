@@ -1,9 +1,11 @@
 import React from 'react'
 import logo from '../assets/logo.png';
-import facebook from '../assets/facebook.png';
-import twitter from '../assets/twitter.png';
-import youtube from '../assets/youtube.png';
-import linkedin from '../assets/linkedin.png';
+import twitter_1 from '../assets/twitter_1.png';
+import telegram_1 from '../assets/telegram_1.png';
+import three from '../assets/3rd.png';
+import four from '../assets/4th.png';
+import five from '../assets/5th.png';
+import six from '../assets/6th.png';
 
 
 
@@ -26,11 +28,25 @@ export default function Footer() {
               The point of using Lorem Ipsum is that it has re-or-less normal distribution of letters, as it look like readable English.
             </p>
 
-            <div className='flex items-center gap-x-2'>
-              <img src={facebook} alt="Logo" className='' />
-              <img src={twitter} alt="Logo" className='' />
-              <img src={youtube} alt="Logo" className='' />
-              <img src={linkedin} alt="Logo" className='' />
+            <div className='flex items-center gap-x-4 pt-3'>
+              <div className='border border-white-100 rounded-full p-2 w-10 h-10 flex items-center justify-center'>
+                <a href='/'><img src={telegram_1} alt="Logo" /></a>
+              </div>
+              <div className='border border-white-100 rounded-full p-2 w-10 h-10 flex items-center justify-center'>
+                <a href='/'><img src={twitter_1} alt="Logo" /></a>
+              </div>
+              <div className='border border-white-100 rounded-full p-2 w-10 h-10 flex items-center justify-center'>
+                <a href='/'><img src={three} alt="Logo" /></a>
+              </div>
+              <div className='border border-white-100 rounded-full p-2 w-10 h-10 flex items-center justify-center'>
+                <a href='/'><img src={four} alt="Logo" /></a>
+              </div>
+              <div className='border border-white-100 rounded-full p-2 w-10 h-10 flex items-center justify-center'>
+                <a href='/'><img src={five} alt="Logo" /></a>
+              </div>
+              <div className='border border-white-100 rounded-full p-2 w-10 h-10 flex items-center justify-center'>
+                <a href='/'><img src={six} alt="Logo" /></a>
+              </div>
             </div>
 
           </div>

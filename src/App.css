@@ -10,6 +10,19 @@
    background: linear-gradient(281.31deg, #F9FB32 -7.22%, #CD9400 68.56%, #F9FB32 131.36%);
  }
 
+ .bg-gradient {
+   background: radial-gradient(79.55% 78.74% at 90.06% 25.65%, #D0BC9B 0%, #1C1B18 100%) linear-gradient(0deg, #EEEEEE, #EEEEEE);
+ }
+
+ .bg-gradient-2 {
+   background: linear-gradient(138.04deg, rgba(207, 187, 154, 0.3) 27.92%, rgba(28, 27, 24, 0.3) 79.73%);
+ }
+
+ .bg-circle {
+   background: linear-gradient(180deg, rgba(122, 255, 247, 0) 57.59%, #B191FF 100%);
+   border-radius: 50%;
+ }
+
  ::-webkit-scrollbar {
    width: 12px;
  }
@@ -27,12 +40,12 @@
  }
 
  #tsparticles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  padding: 0;
-  margin: 0;
-  z-index: -1;
-}
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   padding: 0;
+   margin: 0;
+   z-index: -1;
+ }

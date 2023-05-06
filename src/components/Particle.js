@@ -24,7 +24,7 @@ function Particle() {
                     },
                     "particles": {
                         "number": {
-                            "value": 15,
+                            "value": 25,
                             "density": {
                                 "enable": false,
                                 "value_area": 800
@@ -36,7 +36,7 @@ function Particle() {
                         "shape": {
                             "type": "circle",
                             "options": {
-                                "sides": 5
+                                "sides": 4
                             }
                         },
                         "opacity": {

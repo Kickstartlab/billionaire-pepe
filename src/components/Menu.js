@@ -1,5 +1,12 @@
 import React, { useState } from 'react'
 import logo from '../assets/logo.png';
+import twitter_1 from '../assets/twitter_1.png';
+import telegram_1 from '../assets/telegram_1.png';
+import three from '../assets/3rd.png';
+import four from '../assets/4th.png';
+import five from '../assets/5th.png';
+import six from '../assets/6th.png';
+
 
 
 
@@ -11,13 +18,24 @@ export default function Menu() {
   return (
 
     <header>
-      <div className="lg:flex hidden items-center justify-between font-poppins  text-white-100 h-28">
-        <a href="/" className="logo lg:my-12">
-          <img src={logo} alt="Logo" className='w-9/12' />
-        </a>
+      <div className="lg:flex hidden items-center justify-between font-poppins  text-white-100 h-32">
+        <div>
+          <a href="/" className="logo lg:my-12">
+            <img src={logo} alt="Logo" className='w-9/12' />
+          </a>
+
+          <div className='flex items-center gap-x-8 pt-3'>
+            <a href='/'><img src={telegram_1} alt="Logo" className='' /></a>
+            <a href='/'><img src={twitter_1} alt="Logo" className='' /></a>
+            <a href='/'><img src={three} alt="Logo" className='' /></a>
+            <a href='/'><img src={four} alt="Logo" className='' /></a>
+            <a href='/'><img src={five} alt="Logo" className='' /></a>
+            <a href='/'><img src={six} alt="Logo" className='' /></a>
+          </div>
+        </div>
 
         <nav>
-          <ul className="text-md flex justify-center gap-12 items-center font-poppins">
+          <ul className="text-md flex justify-center gap-12 items-center font-poppins font-normal">
             <li><a href="#about" className="font-semibold text-white-50 hover:text-yellow-50">About</a></li>
             <li><a href="#tokenomics" className="font-semibold text-white-50 hover:text-yellow-50">Tokenomics</a></li>
             <li><a href="#roadmap" className="font-semibold text-white-50 hover:text-yellow-50">Roadmap</a></li>
@@ -34,9 +52,20 @@ export default function Menu() {
       </div>
 
       <div className="lg:hidden flex items-center justify-between pt-5 font-russo">
-        <a href="/" className="text-white-100">
-          <img src={logo} alt="Logo" className='w-8/12' />
-        </a>
+
+        <div>
+          <a href="/" className="text-white-100">
+            <img src={logo} alt="Logo" className='w-8/12' />
+          </a>
+          <div className='flex items-center gap-x-2 pt-3'>
+            <a href='/'><img src={telegram_1} alt="Logo" className='' /></a>
+            <a href='/'><img src={twitter_1} alt="Logo" className='' /></a>
+            <a href='/'><img src={three} alt="Logo" className='' /></a>
+            <a href='/'><img src={four} alt="Logo" className='' /></a>
+            <a href='/'><img src={five} alt="Logo" className='' /></a>
+            <a href='/'><img src={six} alt="Logo" className='' /></a>
+          </div>
+        </div>
 
         <button onClick={() => setShow(!show)} className="nav cursor-pointer">
 
@@ -54,6 +83,15 @@ export default function Menu() {
             <a href="/" className="text-white-100">
               <img src={logo} alt="Logo" className='w-10/12' />
             </a>
+
+            <div className='flex items-center gap-x-2 pt-3'>
+              <a href='/'><img src={telegram_1} alt="Logo" className='' /></a>
+              <a href='/'><img src={twitter_1} alt="Logo" className='' /></a>
+              <a href='/'><img src={three} alt="Logo" className='' /></a>
+              <a href='/'><img src={four} alt="Logo" className='' /></a>
+              <a href='/'><img src={five} alt="Logo" className='' /></a>
+              <a href='/'><img src={six} alt="Logo" className='' /></a>
+            </div>
           </div>
           <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer  text-white-100">
             <a href="#about" className="text-lg ml-4 font-semibold">About</a>
