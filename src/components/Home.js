@@ -42,7 +42,7 @@ export default function Home() {
 
             <div className="lg:px-20 px-5">
 
-                <img data-aos="zoom-in" src={globe_2} alt="Logo" className='absolute right-0 lg:block hidden mt-32' />
+                <img data-aos="zoom-in" src={globe_2} alt="Logo" className='absolute right-0 lg:block hidden mt-32 w-44' />
 
                 <img data-aos="zoom-in" src={globe_3} alt="Logo" className='absolute left-0 lg:block hidden mt-56' />
 
@@ -584,35 +584,17 @@ export default function Home() {
                     <div className='lg:w-7/12 text-center flex flex-col mx-auto'>
 
                         <h3 data-aos="fade-in" className='font-poppins font-semibold text-white-100 mb-6'>
-                            JOIN US
+                            PEPE BILLIONAIRE
                         </h3>
 
                         <h2 data-aos="slide-up" className=' lg:text-4xl text-2xl font-cehua text-center font-semibold text-white-100'>
-                            Join The Community
+                            Disclaimer
                         </h2>
 
                         <p data-aos="fade-out" className='text-white-100 mt-6'>
-                            Join our discord channel or follow us on twitter keep up to date with our latest work and announcements
+                            Crypto Currency investments are subject to market risks. Do your own research before investing. High rewards come along with High risks as well. The team or the creators of this token ($PepeBillionaire) or project ($PepeBillionaire) are not held responsible in any way for your loss or profit for that matter for the duration of your investment in the same.
                         </p>
 
-                        <div className="flex items-center gap-8 font-poppins justify-center">
-                            <a href="/">
-                                <button data-aos="fade-right" className="text-white-100 bg-green-100 py-3.5 border-2 border-green-100 hover:border-white-50 hover:bg-black-50 md:px-8 px-3 rounded-full font-medium mt-5 flex items-center gap-x-2 text-sm">
-                                    <img src={join} alt="Logo" className='' />
-
-                                    Join Discord
-                                </button>
-                            </a>
-
-                            <a href="/">
-                                <button data-aos="fade-leftx" className="text-white-100 font-poppins font-medium py-3.5 md:px-8 px-3 mt-5 text-sm 
-                                    flex items-center gap-2 border-2 border-white-50 hover:border-green-100 hover:bg-green-100 rounded-full">
-                                    <img src={follow} alt="Logo" className='' />
-
-                                    Follow Twitter
-                                </button>
-                            </a>
-                        </div>
                     </div>
 
                 </div>
