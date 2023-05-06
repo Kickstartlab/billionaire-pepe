@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
 import Footer from './Footer'
 import Menu from './Menu'
-import join from '../assets/join.png';
-import follow from '../assets/follow.png';
 import ca from '../assets/ca.png';
 import utility_1 from '../assets/utility_1.png';
 import utility_2 from '../assets/utility_2.png';
@@ -123,7 +121,7 @@ export default function Home() {
             {/*  */}
 
 
-            <div id='tokenomics' className="">
+            <div id='buy' className="">
 
                 <div className="lg:pt-20 py-5 lg:px-20 px-5 container mx-auto">
                     <p data-aos="fade-down" className='font-inter text-center font-semibold text-white-100 pb-5'>

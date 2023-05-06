@@ -60,7 +60,7 @@ export default function Footer() {
               <li><a href='#about'>About</a></li>
               <li><a href='#tokenomics'>Tokenomics</a></li>
               <li><a href='#roadmap'>Roadmap</a></li>
-              <li><a href='#chart'>Chart</a></li>
+              <li><a href='#buy'>Buy</a></li>
               <li><a href='#about'>Whitepaper</a></li>
             </ul>
 
@@ -72,9 +72,9 @@ export default function Footer() {
               Support
             </h4>
             <ul className='space-y-2 text-white-50'>
-              <li><a href=''>Help center</a></li>
-              <li><a href=''>Contact us</a></li>
-              <li><a href=''>Account information</a></li>
+              <li><a href='/'>Help center</a></li>
+              <li><a href='/'>Contact us</a></li>
+              <li><a href='/'>Account information</a></li>
             </ul>
 
           </div>
