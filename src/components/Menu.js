@@ -39,16 +39,11 @@ export default function Menu() {
             <li><a href="#about" className="font-semibold text-white-50 hover:text-yellow-50">About</a></li>
             <li><a href="#tokenomics" className="font-semibold text-white-50 hover:text-yellow-50">Tokenomics</a></li>
             <li><a href="#roadmap" className="font-semibold text-white-50 hover:text-yellow-50">Roadmap</a></li>
-            <li><a href="#team" className="font-semibold text-white-50 hover:text-yellow-50">Team</a></li>
-            <li><a href="#whitepaper" className="font-semibold text-white-50 hover:text-yellow-50">Whitepaper</a></li>
+            <li><a href="#buy" className="font-semibold text-white-50 hover:text-yellow-50">Buy</a></li>
+            <li><a href="#utilities" className="font-semibold text-white-50 hover:text-yellow-50">Utilities</a></li>
           </ul>
         </nav>
 
-        <a href='/'>
-          <button className="text-black-100 btn-gradient py-3 md:px-6 px-3 rounded-3xl font-bold mt-5 uppercase">
-            Connect wallet
-          </button>
-        </a>
       </div>
 
       <div className="lg:hidden flex items-center justify-between pt-5 font-russo">
@@ -58,8 +53,8 @@ export default function Menu() {
             <img src={logo} alt="Logo" className='w-8/12' />
           </a>
           <div className='flex items-center gap-x-2 pt-3'>
-            <a href='/'><img src={telegram_1} alt="Logo" className='' /></a>
-            <a href='/'><img src={twitter_1} alt="Logo" className='' /></a>
+            <a href='https://t.me/PepeBillionairecoinETH'><img src={telegram_1} alt="Logo" className='' /></a>
+            <a href='https://twitter.com/pepeblnrcoin'><img src={twitter_1} alt="Logo" className='' /></a>
             <a href='/'><img src={three} alt="Logo" className='' /></a>
             <a href='/'><img src={four} alt="Logo" className='' /></a>
             <a href='/'><img src={five} alt="Logo" className='' /></a>
@@ -77,40 +72,43 @@ export default function Menu() {
       </div>
 
       {
-        show ? <div className="sidebar fixed top-0 bottom-0 left-0 p-2 w-3/4 overflow-y-auto text-center font-russo font-semibold btn-gradient z-20 font-cehua">
+        show ? <div className="sidebar fixed top-0 bottom-0 left-0 p-2 w-3/4 overflow-y-auto btn-gradient z-20 font-cehua">
 
           <div className="mt-3 px-3 mb-12">
-            <a href="/" className="text-white-100">
-              <img src={logo} alt="Logo" className='w-10/12' />
+            <a href="/" className="">
+              <h4 className='text-3xl font-cehua text-left'>
+                Pepe Billionaire
+              </h4>
             </a>
 
-            <div className='flex items-center gap-x-2 pt-3'>
-              <a href='/'><img src={telegram_1} alt="Logo" className='' /></a>
-              <a href='/'><img src={twitter_1} alt="Logo" className='' /></a>
+          </div>
+          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center bg-black-50 rounded-md">
+            <a href="#about" className="text-lg ml-4 font-semibold">About</a>
+          </button>
+          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center bg-black-50 rounded-md">
+            <a href="#tokenomics" className="text-lg ml-4 font-semibold">Tokenomics</a>
+          </button>
+          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center bg-black-50 rounded-md">
+            <a href="#roadmap" className="text-lg ml-4 font-semibold">Roadmap</a>
+          </button>
+          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center bg-black-50 rounded-md">
+            <a href="#buy" className="text-lg ml-4 font-semibold">Buy</a>
+          </button>
+
+          <div className='mt-24 px-3'>
+            <h4 className='text-2xl font-cehua text-left mb-3'>
+              Contact Us
+            </h4>
+            <div className='flex items-center gap-x-4 pt-3'>
+              <a href='https://t.me/PepeBillionairecoinETH'><img src={telegram_1} alt="Logo" className='' /></a>
+              <a href='https://twitter.com/pepeblnrcoin'><img src={twitter_1} alt="Logo" className='' /></a>
               <a href='/'><img src={three} alt="Logo" className='' /></a>
               <a href='/'><img src={four} alt="Logo" className='' /></a>
               <a href='/'><img src={five} alt="Logo" className='' /></a>
               <a href='/'><img src={six} alt="Logo" className='' /></a>
             </div>
           </div>
-          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer  text-white-100">
-            <a href="#about" className="text-lg ml-4 font-semibold">About</a>
-          </button>
-          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
-            <a href="#tokenomics" className="text-lg ml-4 font-semibold">Tokenomics</a>
-          </button>
-          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
-            <a href="#roadmap" className="text-lg ml-4 font-semibold">Roadmap</a>
-          </button>
-          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
-            <a href="#team" className="text-lg ml-4 font-semibold">Team</a>
-          </button>
-          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
-            <a href="#whitepaper" className="text-lg ml-4 font-semibold">Whitepaper</a>
-          </button>
-          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer text-white-100 bg-black-50">
-            <a href="#whitepaper" className="text-lg ml-4 font-semibold">Connect Wallet</a>
-          </button>
+
         </div> : null
       }
 

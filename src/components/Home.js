@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import Footer from './Footer'
 import Menu from './Menu'
-import ca from '../assets/ca.png';
 import utility_1 from '../assets/utility_1.png';
 import utility_2 from '../assets/utility_2.png';
 import utility_3 from '../assets/utility_3.png';
@@ -41,22 +40,16 @@ export default function Home() {
             <div className="lg:px-20 px-5">
 
                 <img data-aos="zoom-in" src={globe_2} alt="Logo" className='absolute right-0 lg:block hidden mt-32 w-44' />
-
                 <img data-aos="zoom-in" src={globe_3} alt="Logo" className='absolute left-0 lg:block hidden mt-56' />
 
                 <div className='container mx-auto  relative z-20'>
 
                     <Menu />
-
                     <Particle />
 
-                    <div className="lg:flex justify-center items-center gap-x-12 lg:py-20 py-12 space-y-8">
+                    <div className="lg:flex hidden justify-center items-center gap-x-12 lg:py-20 py-12 space-y-8">
 
                         <div className="lg:w-1/2 w-full">
-
-                            <h3 data-aos="fade-down" className='md:text-5xl text-2xl font-cehua  font-semibold text-white-100 pb-5'>
-                                Pepe Billionaire
-                            </h3>
 
                             <h1 data-aos="slide-up" className='md:text-2xl text-xl font-cehua font-bold text-white-100'>
                                 The most affluent pepe meme coin inherits his fathers good fortune and is now ready to share it with the world. $PepeBillionaire now has to his credit, themed tokens that provide unbelievable returns and gratifying remuneration.
@@ -66,14 +59,6 @@ export default function Home() {
                                 If Meme Coins with Utility, Use Case & 1000x's are your thing, adding to the latest hype of Pepe tokens, Pepe Billionaire is sure to be your new fetish!
                             </p>
 
-                            <a href="/">
-                                <button data-aos="zoom-in" className="text-white-100 bg-green-100 py-3.5 border-2 border-green-100 hover:border-white-50 hover:bg-black-50 md:px-8 px-3 rounded-full font-medium mt-5 flex items-center gap-x-2 text-sm">
-                                    <img src={ca} alt="Logo" className='' />
-
-                                    Explore Now
-                                </button>
-                            </a>
-
                         </div>
 
                         <div>
@@ -81,10 +66,22 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div id='about' className='mt-12'>
-                        <p data-aos="fade-down" className='font-inter text-center font-semibold text-white-100 pb-5'>
-                            PEPE BILLIONAIRE
+                    <div className="lg:hidden block lg:py-20 py-12 space-y-8">
+
+                        <h1 data-aos="slide-up" className='md:text-2xl text-xl font-cehua font-bold text-white-100 text-center'>
+                            The most affluent pepe meme coin inherits his fathers good fortune and is now ready to share it with the world. $PepeBillionaire now has to his credit, themed tokens that provide unbelievable returns and gratifying remuneration.
+                        </h1>
+
+                        <div>
+                            <img data-aos="zoom-in" src={top} alt="Logo" className='w-9/12 flex mx-auto' />
+                        </div>
+
+                        <p data-aos="fade-in" className='text-white-100 font-inter text-center'>
+                            If Meme Coins with Utility, Use Case & 1000x's are your thing, adding to the latest hype of Pepe tokens, Pepe Billionaire is sure to be your new fetish!
                         </p>
+
+                    </div>
+                    <div id='about' className='mt-12'>
 
                         <h3 data-aos="slide-up" className='md:text-5xl text-2xl font-cehua text-center font-bold text-white-100'>
                             About Us
@@ -124,9 +121,6 @@ export default function Home() {
             <div id='buy' className="">
 
                 <div className="lg:pt-20 py-5 lg:px-20 px-5 container mx-auto">
-                    <p data-aos="fade-down" className='font-inter text-center font-semibold text-white-100 pb-5'>
-                        PEPE BILLIONAIRE
-                    </p>
 
                     <h2 data-aos="slide-up" className='md:text-7xl text-3xl font-cehua text-center font-bold text-white-100'>
                         How To Buy?
@@ -140,7 +134,7 @@ export default function Home() {
                             <h5 className='font-cehua lg:text-2xl text-xl'>Create A Wallet</h5>
 
                             <p className='font-inter leading-loose'>
-                                Download metamask or your wallet of choice from the app store or google play store for free. Desktop users, download the google chrome extension by going to metamask.io.
+                                Download metamask or your wallet of choice from the app store or google play store for free. Desktop users, download the google chrome extension by going to <a href='/' className=''>metamask.io</a>
                             </p>
                         </div>
 
@@ -160,7 +154,7 @@ export default function Home() {
                             <h5 className='font-cehua lg:text-2xl text-xl'>Go to Uniswap</h5>
 
                             <p className='font-inter leading-loose'>
-                                Connect to Uniswap. Go to app.uniswap.org in google chrome or on the browser inside your Metamask app. Connect your wallet. Paste the $PEPEBillionaire token address into Uniswap, select Pepe, and confirm. When Metamask prompts you for a wallet signature, sign.
+                                Connect to Uniswap. Go to app.uniswap.org in google chrome or on the browser inside your Metamask app. Connect your wallet. Paste the $PEPEBillionaire token address into Uniswap, select $PEPEBillionaire, and confirm. When Metamask prompts you for a wallet signature, sign.
                             </p>
                         </div>
 
@@ -256,14 +250,6 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                            </div>
-
-                            <div className='text-center space-y-3 pt-12'>
-                                <h2 className='md:text-3xl text-xl font-cehua text-center font-semibold text-white-100'>
-                                    Total Maximum Supply
-                                </h2>
-
-                                <p className='text-white-50 font-poppins'>1 000 000 000 000 000 SG</p>
                             </div>
 
                         </div>
@@ -503,7 +489,7 @@ export default function Home() {
 
             {/* Utilities  */}
 
-            <div id='utiilities' className="lg:px-20 px-5">
+            <div id='utilities' className="lg:px-20 px-5">
 
                 <div className='container mx-auto'>
 
