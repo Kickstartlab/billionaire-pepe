@@ -22,10 +22,10 @@ export default function Footer() {
 
             <div className='flex items-center gap-x-4 pt-3'>
               <div className='border border-white-100 rounded-full p-2 w-10 h-10 flex items-center justify-center'>
-                <a href='/'><img src={telegram_1} alt="Logo" /></a>
+                <a href='https://t.me/PepeBillionairecoinETH'><img src={telegram_1} alt="Logo" /></a>
               </div>
               <div className='border border-white-100 rounded-full p-2 w-10 h-10 flex items-center justify-center'>
-                <a href='/'><img src={twitter_1} alt="Logo" /></a>
+                <a href='https://twitter.com/pepeblnrcoin'><img src={twitter_1} alt="Logo" /></a>
               </div>
               <div className='border border-white-100 rounded-full p-2 w-10 h-10 flex items-center justify-center'>
                 <a href='/'><img src={three} alt="Logo" /></a>

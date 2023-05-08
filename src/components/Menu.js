@@ -25,8 +25,8 @@ export default function Menu() {
           </a>
 
           <div className='flex items-center gap-x-8 pt-3'>
-            <a href='/'><img src={telegram_1} alt="Logo" className='' /></a>
-            <a href='/'><img src={twitter_1} alt="Logo" className='' /></a>
+            <a href='https://t.me/PepeBillionairecoinETH'><img src={telegram_1} alt="Logo" className='' /></a>
+            <a href='https://twitter.com/pepeblnrcoin'><img src={twitter_1} alt="Logo" className='' /></a>
             <a href='/'><img src={three} alt="Logo" className='' /></a>
             <a href='/'><img src={four} alt="Logo" className='' /></a>
             <a href='/'><img src={five} alt="Logo" className='' /></a>
@@ -40,7 +40,7 @@ export default function Menu() {
             <li><a href="#tokenomics" className="font-semibold text-white-50 hover:text-yellow-50">Tokenomics</a></li>
             <li><a href="#roadmap" className="font-semibold text-white-50 hover:text-yellow-50">Roadmap</a></li>
             <li><a href="#buy" className="font-semibold text-white-50 hover:text-yellow-50">Buy</a></li>
-            <li><a href="#utilities" className="font-semibold text-white-50 hover:text-yellow-50">Utilities</a></li>
+            <li><a href="#utilities " className="font-semibold text-white-50 hover:text-yellow-50">Utilities</a></li>
           </ul>
         </nav>
 
@@ -48,19 +48,9 @@ export default function Menu() {
 
       <div className="lg:hidden flex items-center justify-between pt-5 font-russo">
 
-        <div>
-          <a href="/" className="text-white-100">
-            <img src={logo} alt="Logo" className='w-8/12' />
-          </a>
-          <div className='flex items-center gap-x-2 pt-3'>
-            <a href='https://t.me/PepeBillionairecoinETH'><img src={telegram_1} alt="Logo" className='' /></a>
-            <a href='https://twitter.com/pepeblnrcoin'><img src={twitter_1} alt="Logo" className='' /></a>
-            <a href='/'><img src={three} alt="Logo" className='' /></a>
-            <a href='/'><img src={four} alt="Logo" className='' /></a>
-            <a href='/'><img src={five} alt="Logo" className='' /></a>
-            <a href='/'><img src={six} alt="Logo" className='' /></a>
-          </div>
-        </div>
+        <a href="/" className="text-white-100">
+          <img src={logo} alt="Logo" className='w-8/12' />
+        </a>
 
         <button onClick={() => setShow(!show)} className="nav cursor-pointer">
 
